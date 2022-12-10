@@ -11,7 +11,7 @@
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
@@ -29,7 +29,7 @@
     "resize-observer-polyfill": "^1.5.0"
   },
   "peerDependencies": {
-    "react": "16.x || 17.x"
+    "react": "16.x || 17.x || 18.x"
   },
   "devDependencies": {
     "all-contributors-cli": "^6.15.0",
